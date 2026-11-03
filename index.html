@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Página da Agenda 12 de Desenvolvimento de Sistemas I. -->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- O título aparece na aba do navegador. -->
+  <title>Meus sites favoritos</title>
+  <style>
+/* Estilos da página: cores, espaçamento e fontes. */
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f1ec; color: #202b29; font-family: Arial, sans-serif; }
+header, main, footer { max-width: 1100px; margin: auto; padding: 28px; }
+header { padding-top: 48px; padding-bottom: 18px; }
+.etiqueta { color: #365e50; font-size: 13px; font-weight: bold; letter-spacing: 2px; }
+header h1 { font-size: clamp(28px, 4vw, 42px); line-height: 1.15; margin: 16px 0; }
+header p { max-width: 600px; color: #4d5c55; line-height: 1.6; }
+/* A grade se adapta à largura da tela, inclusive no celular. */
+main { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 22px; }
+article { background: white; border: 1px solid #d7ded8; border-radius: 14px; overflow: hidden; padding-bottom: 22px; }
+article h1 { font-size: 23px; margin: 22px 22px 16px; }
+article img { display: block; width: 100%; height: 135px; object-fit: cover; }
+article p { margin: 18px 22px; line-height: 1.55; min-height: 48px; color: #4d5c55; }
+article > a { display: inline-block; margin: 0 22px; color: #205140; font-weight: bold; text-underline-offset: 4px; }
+a:hover { color: #9e2534; }
+/* O contorno ajuda a identificar os links ao navegar pelo teclado. */
+a:focus-visible { outline: 3px solid #ae4c18; outline-offset: 5px; }
+footer { color: #526058; font-size: 13px; padding-bottom: 36px; }
+@media (max-width: 420px) { header, main, footer { padding-left: 18px; padding-right: 18px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="etiqueta">MINHA SELEÇÃO DIGITAL</span>
+    <h1>Meus sites favoritos: Guilherme Gomes Justi</h1>
+    <p>Cinco endereços para estudar, descobrir ideias e aproveitar o tempo livre.</p>
+  </header>
+  <!-- Cada bloco tem nome, imagem e um link abaixo da imagem. -->
+  <main>
+    <!-- Favorito: YouTube. A imagem usa um caminho relativo. -->
+    <article>
+      <h1>YouTube</h1>
+      <img src="imagens/youtube.png" alt="Ícone do site YouTube">
+      <p>Vídeos e conteúdos para aprender e se divertir.</p>
+      <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">Acessar YouTube ↗</a>
+    </article>
+    <!-- Favorito: Spotify. A imagem usa um caminho relativo. -->
+    <article>
+      <h1>Spotify</h1>
+      <img src="imagens/spotify.png" alt="Ícone do site Spotify">
+      <p>Músicas e podcasts para diferentes momentos do dia.</p>
+      <a href="https://open.spotify.com/" target="_blank" rel="noopener noreferrer">Acessar Spotify ↗</a>
+    </article>
+    <!-- Favorito: GitHub. A imagem usa um caminho relativo. -->
+    <article>
+      <h1>GitHub</h1>
+      <img src="imagens/github.png" alt="Ícone do site GitHub">
+      <p>Projetos, códigos e ideias para estudar programação.</p>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Acessar GitHub ↗</a>
+    </article>
+    <!-- Favorito: Google. A imagem usa um caminho relativo. -->
+    <article>
+      <h1>Google</h1>
+      <img src="imagens/google.png" alt="Ícone do site Google">
+      <p>Pesquisas para encontrar informações e materiais de estudo.</p>
+      <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">Acessar Google ↗</a>
+    </article>
+    <!-- Favorito: Portal Etec. A imagem usa um caminho relativo. -->
+    <article>
+      <h1>Portal Etec</h1>
+      <img src="imagens/etec.png" alt="Ícone do site Portal Etec">
+      <p>Aulas, atividades e materiais do curso técnico.</p>
+      <a href="https://eadtec.cps.sp.gov.br/home.php" target="_blank" rel="noopener noreferrer">Acessar Portal Etec ↗</a>
+    </article>
+  </main>
+  <footer>Guilherme Gomes Justi · Desenvolvimento de Sistemas I · Agenda 12</footer>
+</body>
+</html>
